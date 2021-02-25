@@ -1,7 +1,7 @@
 import React, {Component, useEffect, useState} from 'react';
 import Task from "./Task";
 
-const List = (props) => {
+const TaskList = (props) => {
     const {tasks} = props;
     const [nameFilter, setNameFilter] = useState('');
     const [statusFilter, setStatusFilter] = useState(-1);
@@ -49,4 +49,4 @@ const List = (props) => {
         </table>
     )
 }
-export default List;
+export default TaskList;
